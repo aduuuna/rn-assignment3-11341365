@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Dev-app",
-    "slug": "Dev-app",
+    "name": "DevApp",
+    "slug": "DevApp",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",

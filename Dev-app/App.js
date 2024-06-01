@@ -7,26 +7,35 @@ import {
   Image,
   TextInput,
   text,
+  ScrollView,
+  Button,
 } from "react-native";
 import pic4 from "./assets/picture4.jpg";
+import pic2 from "./assets/picture2.jpg";
+import HorizontalScrollView from "./HorizontalScrollView";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <SafeAreaView>
-        <View style={styles.field1}>
-          <Text style={styles.header}>
-            {"\n"}Hello, Devs {"\n"}
-            <Text style={styles.miniHeader}>14 task today</Text>
-          </Text>
-          <Image source={pic4} style={styles.picFour} />
-        </View>
-        <View style={styles.field2}>
-          <TextInput style={styles.input} placeholder="Search" value={text} />
-        </View>
-        <StatusBar style="auto" />
-      </SafeAreaView>
-    </View>
+    <ScrollView>
+      <View style={styles.container}>
+        <SafeAreaView>
+          <View style={styles.field1}>
+            <Text style={styles.header}>
+              {"\n"}Hello, Devs {"\n"}
+              <Text style={styles.miniHeader}>14 tasks today</Text>
+            </Text>
+            <Image source={pic4} style={styles.picFour} />
+          </View>
+          <View style={styles.field2}>
+            <TextInput style={styles.input} placeholder="Search" value={text} />
+            <Image source={pic2} style={styles.picTwo} />
+          </View>
+          <Text style={styles.Cate}>Categories{"\n"}</Text>
+          <HorizontalScrollView />
+          <StatusBar style="auto" />
+        </SafeAreaView>
+      </View>
+    </ScrollView>
   );
 }
 
@@ -59,36 +68,28 @@ const styles = StyleSheet.create({
   },
   field1: {
     display: "flex",
-
-    borderWidth: 1,
-    //borderColor: "#ccc",
-    //borderRadius: 4,
     padding: 10,
-    height: 120,
+    height: 110,
 
     marginTop: 30,
   },
   input: {
     height: 55,
-    borderWidth: 2,
-    width: "70%",
+    width: "78%",
     borderColor: "balck",
     borderRadius: 15,
     marginVertical: 8,
     padding: 8,
     fontWeight: "bold",
     fontSize: 20,
+    backgroundColor: "white",
   },
 
   field2: {
     padding: 10,
-    height: 100,
+    height: 80,
     marginBottom: 30,
-    borderColor: "#ccc",
-    borderRadius: 4,
-    borderWidth: 2,
     alignContent: "center",
-    // alignItems: "center",
     display: "flex",
     flexDirection: "column",
   },
@@ -98,5 +99,18 @@ const styles = StyleSheet.create({
     marginRight: 8,
     backgroundColor: "red",
     color: "black",
+  },
+  picTwo: {
+    width: 50,
+    height: 50,
+    borderRadius: 20,
+    alignSelf: "flex-end",
+    top: -60,
+  },
+  Cate: {
+    fontWeight: "600",
+    fontSize: 25,
+    marginLeft: 10,
+    letterSpacing: 1,
   },
 });

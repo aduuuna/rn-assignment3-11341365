@@ -7,5 +7,8 @@ Additionally, TouchableOpacity is generally more performant than the Button comp
 By using TouchableOpacity, I was able to create visually appealing and consistent buttons throughout my Expo app. Below are screenshots of the app, showcasing the custom buttons with image backgrounds that I implemented using TouchableOpacity
 
 https://github.com/aduuuna/rn-assignment3-11341365/blob/main/Screenshots/WhatsApp%20Image%202024-06-02%20at%2021.18.24_9016493e.jpg
+
 https://github.com/aduuuna/rn-assignment3-11341365/blob/main/Screenshots/WhatsApp%20Image%202024-06-02%20at%2021.18.33_4fa5d0fd.jpg
+
 https://github.com/aduuuna/rn-assignment3-11341365/blob/main/Screenshots/WhatsApp%20Video%202024-06-02%20at%2021.18.33_3d04b9ef.mp4
+
